@@ -1,0 +1,88 @@
+body {
+  margin: 0;
+  font: normal 16px Helvetica, Arial, sans-serif;
+  color: #f0f0f0;
+  background: #151515;
+}
+
+main {
+  position: relative;
+  display: block;
+  max-width: 1000px;
+  min-width: 600px;
+  padding: 25px 20px 20px 20px;
+  margin: 0 auto;
+  background: #333333;
+}
+
+h1 { text-align: center; }
+
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+#figures {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 784px;
+  padding: 0 0 30px 0;
+}
+
+#figures figure {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  margin: 0;
+  width: 100%;
+  height: 784px;
+}
+
+#figures .show {
+  opacity: 1;
+  transition: opacity 1000ms;
+}
+
+#figures .hide {
+  opacity: 0;
+  transition: opacity 1000ms;
+}
+
+figure img {
+  border: 15px solid #ffffff;
+}
+
+figure + figure {
+  opacity: 0;
+}
+
+figcaption {
+  display: block;
+  padding: 10px 0 0 0;
+}
+
+ul {
+  padding: 0;
+  margin: 0 -15px;
+  font-size: 0;
+}
+
+li {
+  display: inline-block;
+  width: 25%;
+  padding: 0 15px;
+  vertical-align: top;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+li img.active {
+  border: 3px solid blue;
+}
